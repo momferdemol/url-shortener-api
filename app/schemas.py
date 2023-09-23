@@ -1,3 +1,5 @@
+# app/schemas.py
+
 from pydantic import BaseModel
 
 
@@ -10,6 +12,8 @@ class URL(URLBase):
     clicks: int
 
     class Config:
+        # object relation mapping
+        # let pydantic know to use models.py
         from_attributes = True
 
 

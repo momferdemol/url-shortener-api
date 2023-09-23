@@ -1,3 +1,5 @@
+# app/main.py
+
 import validators  # type: ignore
 from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.responses import RedirectResponse
@@ -21,11 +23,11 @@ def get_admin_info(db_url: models.URL) -> schemas.URLInfo:
     return db_url
 
 
-def raise_bad_request(message):
+def raise_bad_request(message: str):
     raise HTTPException(status_code=400, detail=message)
 
 
-def raise_not_found(request):
+def raise_not_found(request: Request):
     message = f"URL '{request.url}' doesn't exist"
     raise HTTPException(status_code=404, detail=message)
 
