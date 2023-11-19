@@ -8,7 +8,7 @@ from pydantic_settings import BaseSettings
 class Settings(BaseSettings):
     env_name: str = "local"
     base_url: str = "http://localhost:8000"
-    db_url: str = "sqlite:///./shortener.db"
+    db_url: str = "sqlite:///./app/shortener.db"
 
     class Config:
         env_file = ".env"
