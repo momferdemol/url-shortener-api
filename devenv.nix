@@ -14,7 +14,7 @@
   # language support
   languages.python = {
     enable = true;
-    version = "3.11";
+    version = "3.10";
     poetry.enable = true;
     poetry.activate.enable = true;
     poetry.install.enable = true;

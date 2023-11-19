@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "URL shortener API"
 description = "URL shortener API with FastAPI and SQLite database"
-version = "0.0.1"
+version = "0.1.0"
 authors = ["Momfer"]
 
 [tool.poetry.dependencies]
-python = "~=3.11"
+python = "~=3.10"
 fastapi = "~=0.103"
 pydantic = "~=2.3"
 pydantic-settings = "~=2.0"
