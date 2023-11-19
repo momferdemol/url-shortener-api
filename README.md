@@ -12,6 +12,11 @@ Run program
 ```sh
 $ uvicorn app.main:app --reload
 ```
+> Remove `--reload` when running in production.
+
+**API docs**
+
+Go to `/docs` when app is running for API docs.
 
 **Dependency**
 
